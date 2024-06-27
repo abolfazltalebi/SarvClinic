@@ -9,12 +9,15 @@ function Section2() {
   ];
   return (
     <section className="bg-[#F1F8FF] py-20">
-      <div className="flex items-center justify-center gap-4 container">
+      <div
+        className="flex flex-wrap md:flex-nowrap items-center justify-center gap-5 container"
+        data-aos="fade-left"
+      >
         {service.map((serviceItems) => {
           return (
             <div
               key={serviceItems.id}
-              className="bg-white rounded-xl p-2 transition-all cursor-pointer transform duration-300 ease-in-out flex flex-col items-center gap-3 hover:translate-y-[-10px]"
+              className="bg-white rounded-xl p-2 transition-all cursor-pointer transform duration-300 ease-in-out flex flex-col items-center gap-3 hover:translate-y-[-10px] border-2 hover:border-primary hover:scale-105"
             >
               <div>
                 <img src={serviceItems.src} alt="" />
@@ -23,10 +26,10 @@ function Section2() {
                 <p className="text-xl font-bold text-center">
                   {serviceItems.name}
                 </p>
-                <p className="text-gray-800">
+                <p className="text-gray-800 text-sm text-center leading-6">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
                   با استفاده از طراحان گرافیک است
-                </p> 
+                </p>
               </div>
             </div>
           );

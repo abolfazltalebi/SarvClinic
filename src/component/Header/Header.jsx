@@ -13,7 +13,7 @@ function Header() {
   AOS.init();
   return (
     <header>
-      <div className="hidden md:flex items-center justify-between px-4 shadow shadow-primary bg-white py-3 mb-1">
+      <div className="hidden md:flex items-center justify-between px-4  bg-white py-3  border-b-2">
         <div className="flex items-center gap-4">
           {/* right-item */}
           <div className="flex items-center gap-2">
@@ -35,11 +35,7 @@ function Header() {
           </p>
         </div>
       </div>
-      <navbar
-        className="flex items-center justify-between bg-white px-4"
-        data-aos="zoom-in"
-        data-aos-duration="1500"
-      >
+      <navbar className="flex items-center justify-between bg-white px-4">
         <div>
           <img src={headerLogo} alt="" />
         </div>
