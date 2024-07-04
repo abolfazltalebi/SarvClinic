@@ -17,7 +17,7 @@ function Section2() {
           return (
             <div
               key={serviceItems.id}
-              className="bg-white rounded-xl p-2 transition-all cursor-pointer transform duration-300 ease-in-out flex flex-col items-center gap-3 hover:translate-y-[-10px] border-2 hover:border-primary hover:scale-105"
+              className="card-box"
             >
               <div>
                 <img src={serviceItems.src} alt="" />

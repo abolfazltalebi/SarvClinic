@@ -6,6 +6,7 @@ import Section2 from "./component/Section2/Section2";
 import AboutSection from "./component/AboutSection/AboutSection";
 import Services from "./component/Services/Services";
 import ContactMe from "./component/ContactMe/ContactMe";
+import Blogs from "./component/Blogs/Blogs";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <AboutSection />
         <Services />
         <ContactMe />
+        <Blogs/>
       </main>
     </>
   );

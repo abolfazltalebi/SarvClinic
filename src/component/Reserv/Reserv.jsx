@@ -1,7 +1,7 @@
 // import Picker from "./Picker";
 function Reserv() {
   return (
-    <section className="max-w-4xl mx-8 md:mx-auto bg-white rounded-xl shadow-lg md:rounded-full p-7 relative top-7 md:-top-2">
+    <section className="reserve-section">
       <form
         action=""
         className="flex flex-wrap md:flex-nowrap  items-center justify-center gap-3 space-y-3"
@@ -28,7 +28,7 @@ function Reserv() {
           <input type="text" className="w-full p-2 border rounded-md" />
           {/* <Picker /> */}
         </div>
-        <div className="w-2/6 md:w-auto flex items-center justify-center mx-auto bg-primary p-2.5 mt-12 rounded-xl text-white gap-3 transition-all hover:bg-accent cursor-pointer hover:translate-y-[-5px]">
+        <div className="btn-reserve">
           <i className="ri-calendar-2-fill"></i>
           <a className=" transition-all ">رزرو نوبت</a>
         </div>

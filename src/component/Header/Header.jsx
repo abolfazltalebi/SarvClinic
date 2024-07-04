@@ -13,7 +13,7 @@ function Header() {
   AOS.init();
   return (
     <header>
-      <div className="hidden md:flex items-center justify-between px-4  bg-white py-3  border-b-2">
+      <div className="back-header">
         <div className="flex items-center gap-4">
           {/* right-item */}
           <div className="flex items-center gap-2">
@@ -35,7 +35,7 @@ function Header() {
           </p>
         </div>
       </div>
-      <navbar className="flex items-center justify-between bg-white px-4">
+      <navbar className="nav">
         <div>
           <img src={headerLogo} alt="" />
         </div>
@@ -44,7 +44,7 @@ function Header() {
             return (
               <li
                 key={navItem.id}
-                className="px-4 transition-all hover:text-primary hover:translate-y-[-5px] hover:border-primary hover:border-b-2 py-2"
+                className="nav-item"
               >
                 <a href="{navItem.link}">{navItem.name}</a>
               </li>
@@ -52,11 +52,11 @@ function Header() {
           })}
         </nav>
         <div className="flex items-center justify-between gap-4">
-          <div className="hidden md:flex items-center bg-primary p-3 rounded-xl text-white gap-3 transition-all hover:bg-accent cursor-pointer hover:translate-y-[-5px]">
+          <div className="btn-header-1">
             <i className="ri-phone-line"></i>
             <a className=" transition-all ">تماس با ما</a>
           </div>
-          <div className="flex items-center bg-primary p-3 rounded-xl text-white gap-3 transition-all hover:bg-accent cursor-pointer hover:translate-y-[-5px]">
+          <div className="btn-header-2">
             <i className="ri-calendar-2-fill"></i>
             <a className=" transition-all ">رزرو نوبت</a>
           </div>

@@ -22,7 +22,7 @@ function Services() {
   return (
     <section className="container my-4 space-y-6">
       <div className="flex flex-col items-center justify-center gap-4">
-        <div className="flex items-center justify-center w-2/5 md:w-[200px] border border-gray-200 rounded-full p-2">
+        <div className="border-title">
           <p className="text-base text-primary font-bold">خدمات کلینیک سرو</p>
         </div>
         <div>
@@ -33,14 +33,14 @@ function Services() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
+      <div className="services-container">
         {services.map((serviceItem) => {
           return (
             <div className="relative group" key={serviceItem.id}>
               <div className="group-hover:opacity-50 group-hover:scale-105  transition duration-300 ease-in-out">
                 <img src={serviceItem.src} className="rounded-xl" alt="" />
               </div>
-              <div className="bg-white w-2/3 p-2 rounded-xl mx-auto absolute top-36 md:top-28 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100  transition-all duration-300 ease-in-out space-y-2">
+              <div className="services-box">
                 <div className="flex items-center gap-2">
                   <img src={serviceItem.icon} alt="" className="w-10 h-10" />
                   <p className="font-bold text-lg">{serviceItem.name}</p>

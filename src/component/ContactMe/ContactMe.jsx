@@ -1,13 +1,13 @@
 import imageContact from "../../assets/images/female-medical-doctor.webp";
 function ContactMe() {
   return (
-    <section className="bg-[#F1F8FF]">
+    <section className="bg-[#F1F8FF] py-4 md:py-0">
       <div className="container flex flex-wrap items-center justify-center gap-4">
         <div className="">
           <img src={imageContact} className="md:w-[400px] h-full " alt="" />
         </div>
         <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-center w-2/5 md:w-[200px] border border-gray-200 rounded-full p-2">
+          <div className="border-title">
             <p className="text-base text-primary font-bold">
               تماس با کلینیک سرو
             </p>
@@ -26,7 +26,7 @@ function ContactMe() {
             <div className="flex flex-wrap items-center justify-center gap-2">
               <a
                 href="tel:09123456789"
-                className="w-2/5 md:w-[200px] border border-gray-400 rounded-full p-2 animate-pulse duration-300"
+                className="border-title bg-white"
               >
                 <p className="text-base text-center text-primary font-bold">
                   09123456789
@@ -34,7 +34,7 @@ function ContactMe() {
               </a> 
               <a
                 href="tel:09123456789"
-                className="w-2/5 md:w-[200px] border border-gray-400 rounded-full p-2 animate-pulse duration-500"
+                className="border-title bg-white"
               >
                 <p className="text-base text-center text-primary font-bold">
                   09223456789
@@ -42,7 +42,7 @@ function ContactMe() {
               </a>
               <a
                 href="tel:09123456789"
-                className="w-2/5 md:w-[200px] border border-gray-400 rounded-full p-2 animate-pulse duration-300"
+                className="border-title bg-white"
               >
                 <p className="text-base text-center text-primary font-bold">
                   02123456789
