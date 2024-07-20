@@ -14,6 +14,7 @@ const Picker = () => {
     <div>
       <DatePicker
         style={{
+          border: "1px solid var(--primary)",
           borderRadius: "8px",
           fontSize: "14px",
           padding: "20px",
