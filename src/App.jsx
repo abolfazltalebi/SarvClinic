@@ -7,6 +7,7 @@ import AboutSection from "./component/AboutSection/AboutSection";
 import Services from "./component/Services/Services";
 import ContactMe from "./component/ContactMe/ContactMe";
 import Blogs from "./component/Blogs/Blogs";
+import Footer from "./component/Footer/Footer";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <ContactMe />
         <Blogs/>
       </main>
+      <Footer/>
     </>
   );
 }

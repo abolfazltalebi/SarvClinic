@@ -1,7 +1,7 @@
 import imageContact from "../../assets/images/female-medical-doctor.webp";
 function ContactMe() {
   return (
-    <section className="bg-[#F1F8FF] py-4 md:py-0">
+    <section className="bg-[#F1F8FF] py-4 md:py-0" id="contact">
       <div className="container flex flex-wrap items-center justify-center gap-4">
         <div className="">
           <img src={imageContact} className="md:w-[400px] h-full " alt="" />

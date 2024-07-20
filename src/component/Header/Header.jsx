@@ -7,7 +7,7 @@ function Header() {
     { id: 1, name: "صفحه اصلی", link: "/" },
     { id: 2, name: "درباره ما", link: "/about" },
     { id: 3, name: "خدمات ما", link: "/orders" },
-    { id: 4, name: "تماس با ما", link: "/contact" },
+    { id: 4, name: "تماس با ما", link: "#contact" },
     { id: 5, name: "وبلاگ ما", link: "/contact" },
   ];
   AOS.init();

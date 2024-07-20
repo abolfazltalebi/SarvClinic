@@ -1,7 +1,7 @@
+@import "./assets/font/stylesheet.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./assets/font/stylesheet.css";
 
 @layer base {
   :root {
@@ -18,10 +18,12 @@
     --secondary: #020024;
     --accent: #0600c2;
   }
+  html,
   body {
     @apply bg-[#fbfbfe];
-    font-family: "Estedad-FD";
+    font-family: "Estedad-FD" !important;
   }
+
 }
 
 @layer components {
@@ -46,7 +48,7 @@
     @apply flex;
     @apply btn-header;
   }
-  
+
   /* Section 1 */
   .section1 {
     @apply container grid grid-cols-1 md:grid-cols-2 items-center justify-around gap-3;
@@ -57,15 +59,15 @@
   .title-section1 {
     @apply text-xl md:text-4xl font-bold;
   }
-  
+
   /* Reserve Section */
   .reserve-section {
     @apply max-w-4xl mx-8 md:mx-auto bg-white rounded-xl shadow-lg md:rounded-full p-7 relative top-7 md:-top-2;
   }
   .btn-reserve {
-    @apply w-2/6 md:w-auto flex items-center justify-center mx-auto bg-primary p-2.5 mt-12 rounded-xl text-white gap-3 transition-all hover:bg-accent cursor-pointer hover:translate-y-[-5px];
+    @apply w-2/6 md:w-auto flex items-center justify-center mx-auto bg-primary p-2.5 relative top-4 rounded-xl text-white gap-3 transition-all hover:bg-accent cursor-pointer hover:translate-y-[-5px];
   }
-
+  
   /* Section 2 */
   .card-box {
     @apply bg-white rounded-xl p-2 transition-all cursor-pointer transform duration-300 ease-in-out flex flex-col items-center gap-3 hover:translate-y-[-10px] border-2 hover:border-primary hover:scale-105;
