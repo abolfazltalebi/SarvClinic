@@ -9,7 +9,7 @@ function Reserv() {
 
   return (
     <section className="reserve-section">
-      <form className="flex flex-wrap md:flex-nowrap items-center justify-center gap-3 space-y-3 md:space-y-0 relative">
+      <form className="flex flex-col md:flex-row items-center justify-center gap-3 space-y-3 md:space-y-0 relative">
         <div className="space-y-2">
           <div className="flex items-center gap-3">
             <i className="ri-user-line"></i>
@@ -47,7 +47,7 @@ function Reserv() {
         </div>
       </form>
       {isFormSubmitted && (
-        <div className="absolute inset-0 flex items-center justify-center z-50 bg-primary bg-opacity-85 rounded-full">
+        <div className="absolute inset-0 flex items-center justify-center z-50 bg-primary bg-opacity-85 rounded-md md:rounded-full">
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <p>رزرو شما با موفقیت ثبت شد.</p>
             <button onClick={() => setIsFormSubmitted(false)} className="bg-primary text-white p-2 rounded-md mx-auto">بستن</button>
