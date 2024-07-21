@@ -1,7 +1,10 @@
+
 import "remixicon/fonts/remixicon.css";
 import headerLogo from "../../assets/images/logo-header-desktop.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
+import HeaderMobile from "./HeaderMobile/HeaderMobile";
 function Header() {
   const listMenu = [
     { id: 1, name: "صفحه اصلی", link: "/" },
@@ -11,6 +14,13 @@ function Header() {
     { id: 5, name: "وبلاگ ما", link: "/contact" },
   ];
   AOS.init();
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpenMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
   return (
     <header>
       <div className="back-header">
@@ -42,20 +52,28 @@ function Header() {
         <nav className="hidden md:flex items-center list-none ">
           {listMenu.map((navItem) => {
             return (
-              <li
-                key={navItem.id}
-                className="nav-item"
-              >
+              <li key={navItem.id} className="nav-item">
                 <a href="{navItem.link}">{navItem.name}</a>
               </li>
             );
           })}
         </nav>
         <div className="flex items-center justify-between gap-4">
-          <div className="btn-header-1">
+          <div className="btn-header-1 hidden md:inline-flex">
             <i className="ri-phone-line"></i>
             <a className=" transition-all ">تماس با ما</a>
           </div>
+          <div
+            className="md:hidden"
+            onClick={() => {
+              handleOpenMenu();
+            }}
+          >
+            <i className="ri-menu-line ri-lg"></i>
+          </div>
+          {isOpen && (
+            <HeaderMobile onClose={handleCloseMenu} />
+          )}
           <div className="btn-header-2">
             <i className="ri-calendar-2-fill"></i>
             <a className=" transition-all ">رزرو نوبت</a>

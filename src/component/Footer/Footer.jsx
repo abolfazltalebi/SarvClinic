@@ -1,6 +1,6 @@
 import logoFooter from "../../assets/images/logo-footer.webp";
 import "remixicon/fonts/remixicon.css";
-import logo from "../../assets/images/log.png"
+import logo from "../../assets/images/log.png";
 function Footer() {
   const fItem2 = [
     { id: 1, name: "صفحه اصلی", link: "" },
@@ -18,10 +18,10 @@ function Footer() {
   ];
   return (
     <footer className="footer bg-[#000A2D] p-4 px-8">
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-10 my-12">
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-10 my-4  md:my-12">
         <div className="footer-item1">
           <div>
-            <img src={logoFooter} alt="" />
+            <img src={logoFooter} className=" h-24" alt="" />
           </div>
           <div>
             <p className="text-white text-sm text-justify">
@@ -96,15 +96,23 @@ function Footer() {
         </div>
       </div>
       <div className="w-full h-1 rounded-full bg-primary"></div>
-      <div className="flex items-center justify-between my-2">
-        <div>
-            <img src={logo} className="w-36" alt="" />
+      <div className="flex  items-center justify-between my-4">
+        <div className="hidden md:inline">
+          <img src={logo} className="w-36" alt="" />
         </div>
-            <div>
-                <p className="text-white text-sm">تمامی حقوق طراحی این صفحه توسط 
-                <a href="www.abolfazltalebii.ir" className="text-primary bg-white mx-1 rounded-full animate-bounce p-1"> ابوالفضل طالبی </a>
-                 انجام شده است.</p>
-            </div>
+        <div>
+          <p className="text-white text-sm">
+            تمامی حقوق طراحی این صفحه توسط
+            <a
+              href="www.abolfazltalebii.ir"
+              className="text-primary bg-white mx-1 rounded-full animate-bounce p-1"
+            >
+              
+              ابوالفضل طالبی
+            </a>
+            انجام شده است.
+          </p>
+        </div>
       </div>
     </footer>
   );

@@ -38,7 +38,7 @@ function Services() {
           return (
             <div className="relative group" key={serviceItem.id}>
               <div className="group-hover:opacity-50 group-hover:scale-105  transition duration-300 ease-in-out">
-                <img src={serviceItem.src} className="rounded-xl" alt="" />
+                <img src={serviceItem.src} className="rounded-xl w-full h-auto" alt="" />
               </div>
               <div className="services-box">
                 <div className="flex items-center gap-2">
