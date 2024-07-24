@@ -1,12 +1,5 @@
-import blog1 from "../../assets/images/blog-1.webp";
-import blog2 from "../../assets/images/blog-2.webp";
-import blog3 from "../../assets/images/blog-3.webp";
+import { Blog } from "../../constants/index";
 function Blogs() {
-  const Blog = [
-    { id: 1, name: "باید ها و نباید های سفید کردن دندان؟", src: blog1 },
-    { id: 2, name: "نکات رعات بهداشت و دهان در کودکان؟", src: blog2 },
-    { id: 3, name: "بیماری سرطان دهان چیست؟", src: blog3 },
-  ];
   return (
     <section className="blogs">
       <div className="flex flex-col items-center justify-center">

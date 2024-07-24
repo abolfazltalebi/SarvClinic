@@ -1,21 +1,8 @@
-import logoFooter from "../../assets/images/logo-footer.webp";
 import "remixicon/fonts/remixicon.css";
+import logoFooter from "../../assets/images/logo-footer.webp";
 import logo from "../../assets/images/log.png";
+import { fItem2, fItem3 } from "../../constants/index";
 function Footer() {
-  const fItem2 = [
-    { id: 1, name: "صفحه اصلی", link: "" },
-    { id: 2, name: "درباره ما", link: "" },
-    { id: 3, name: "خدمات ما", link: "" },
-    { id: 4, name: "تماس با ما", link: "" },
-    { id: 5, name: "وبلاگ ما", link: "" },
-  ];
-  const fItem3 = [
-    { id: 1, name: "بلیچینگ دندان", link: "" },
-    { id: 2, name: "بریس های دندانی", link: "" },
-    { id: 3, name: "امپلنت دندان", link: "" },
-    { id: 4, name: "چکاپ دندان", link: "" },
-    { id: 5, name: "بریس های ارتودنسی", link: "" },
-  ];
   return (
     <footer className="footer bg-[#000A2D] p-4 px-8">
       <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-10 my-4  md:my-12">
@@ -42,7 +29,7 @@ function Footer() {
                 <div className="" key={footerItem.id}>
                   <a
                     href={footerItem.link}
-                    className="text-white  hover:text-primary text-md"
+                    className="text-white hover:bg-white px-2 rounded-md hover:text-primary text-md"
                   >
                     {footerItem.name}
                   </a>
@@ -62,7 +49,7 @@ function Footer() {
                 <div className="" key={footerItem3.id}>
                   <a
                     href={footerItem3.link}
-                    className="text-white  hover:text-primary text-md"
+                    className="text-white hover:bg-white px-2 rounded-md hover:text-primary text-md"
                   >
                     {footerItem3.name}
                   </a>
@@ -77,20 +64,45 @@ function Footer() {
             <div className="w-12 h-2 bg-primary animate-bounce rounded-full"></div>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="flex gap-2 text-white">
-              <a href="/">تماس با کلینیک مرکزی</a>
+            <div className="">
+              <a
+                href="/"
+                className="text-white hover:bg-white px-2 rounded-md hover:text-primary transition-all"
+              >
+                تماس با کلینیک مرکزی
+              </a>
             </div>
-            <div className="flex gap-2 text-white">
-              <a href="/">تماس با شعبه نیاوران</a>
+            <div className="">
+              <a
+                href="/"
+                className="text-white hover:bg-white px-2 rounded-md hover:text-primary transition-all"
+              >
+                تماس با شعبه نیاوران
+              </a>
             </div>
-            <div className="flex gap-2 text-white">
-              <a href="/">تماس با شعبه فرمانیه</a>
+            <div className="">
+              <a
+                href="/"
+                className="text-white hover:bg-white px-2 rounded-md hover:text-primary transition-all"
+              >
+                تماس با شعبه فرمانیه
+              </a>
             </div>
-            <div className="flex gap-2 text-white">
-              <a href="/">تماس با شعبه زعفرانیه</a>
+            <div className="">
+              <a
+                href="/"
+                className="text-white hover:bg-white px-2 rounded-md hover:text-primary transition-all"
+              >
+                تماس با شعبه زعفرانیه
+              </a>
             </div>
-            <div className="flex gap-2 text-white">
-              <a href="/">تماس با شعبه اقدسیه</a>
+            <div className="">
+              <a
+                href="/"
+                className="text-white hover:bg-white px-2 rounded-md hover:text-primary transition-all"
+              >
+                تماس با شعبه اقدسیه
+              </a>
             </div>
           </div>
         </div>
@@ -102,14 +114,13 @@ function Footer() {
         </div>
         <div>
           <p className="text-white text-sm">
-            تمامی حقوق طراحی این صفحه توسط
+            تمامی حقوق طراحی این صفحه توسط{" "}
             <a
-              href="www.abolfazltalebii.ir"
+              href="../www.abolfazltalebii.ir"
               className="text-primary bg-white mx-1 rounded-full animate-bounce p-1"
             >
-              
               ابوالفضل طالبی
-            </a>
+            </a>{" "}
             انجام شده است.
           </p>
         </div>

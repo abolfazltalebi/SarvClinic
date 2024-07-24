@@ -1,20 +1,14 @@
 import { useState } from "react";
 import headerLogo from "../../../assets/images/logo-header-desktop.webp";
+import { listMenu } from "../../../constants/index";
 
 function HeaderMobile() {
-  const listMenu = [
-    { id: 1, name: "صفحه اصلی", link: "/" },
-    { id: 2, name: "درباره ما", link: "/about" },
-    { id: 3, name: "خدمات ما", link: "/orders" },
-    { id: 4, name: "تماس با ما", link: "#contact" },
-    { id: 5, name: "وبلاگ ما", link: "/contact" },
-  ];
   const [isClosed, setIsClosed] = useState(true);
   const handleClose = () => {
     setIsClosed(!isClosed);
   };
   return (
-    <div className="header-mobile w-2/3 absolute top-0 left-0 h-screen bg-white/80 backdrop-filter backdrop-blur-sm z-50 p-4">
+    <div className="header-mobile w-full absolute top-0 left-0 h-screen bg-white/80 backdrop-filter backdrop-blur-sm z-50 p-4">
       <div className="flex items-center justify-between ">
         <div>
           <div>

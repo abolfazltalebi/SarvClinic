@@ -6,7 +6,7 @@ function Section1() {
         <img src={imageSection} className='w-full h-auto' alt="" />
       </div>
       <div className="space-y-3">
-        <div className=" border-box">
+        <div className=" border-box w-full">
           <p className="text-base text-primary">
           👋 سلام به دندان پزشکی سرو خوش آمدید.
           </p>

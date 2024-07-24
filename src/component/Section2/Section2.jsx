@@ -8,9 +8,9 @@ function Section2() {
     { id: 3, name: "بهترین خدمات", src: Icon3 },
   ];
   return (
-    <section className="bg-[#F1F8FF] py-20">
+    <section className="bg-[#F1F8FF] py-20 ">
       <div
-        className="flex flex-wrap md:flex-nowrap items-center justify-center gap-5 container"
+        className="flex flex-wrap md:flex-nowrap items-center justify-center gap-5 container "
         data-aos="fade-left"
       >
         {service.map((serviceItems) => {

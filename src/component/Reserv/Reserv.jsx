@@ -39,9 +39,13 @@ function Reserv() {
           </div>
           <Picker />
         </div>
-        <div className="btn-reserve">
+        <div className="btn-reserve ">
           <i className="ri-calendar-2-fill"></i>
-          <button type="submit" onClick={showPopUp} className="transition-all duration-300">
+          <button
+            type="submit"
+            onClick={showPopUp}
+            className="transition-all duration-300"
+          >
             رزرو نوبت
           </button>
         </div>
@@ -50,7 +54,12 @@ function Reserv() {
         <div className="absolute inset-0 flex items-center justify-center z-50 bg-primary bg-opacity-85 rounded-md md:rounded-full">
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <p>رزرو شما با موفقیت ثبت شد.</p>
-            <button onClick={() => setIsFormSubmitted(false)} className="bg-primary text-white p-2 rounded-md mx-auto">بستن</button>
+            <button
+              onClick={() => setIsFormSubmitted(false)}
+              className="bg-primary text-white p-2 rounded-md mx-auto"
+            >
+              بستن
+            </button>
           </div>
         </div>
       )}

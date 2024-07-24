@@ -1,18 +1,11 @@
-
+import { useState } from "react";
+import { listMenu } from "../../constants/index";
 import "remixicon/fonts/remixicon.css";
 import headerLogo from "../../assets/images/logo-header-desktop.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 function Header() {
-  const listMenu = [
-    { id: 1, name: "صفحه اصلی", link: "/" },
-    { id: 2, name: "درباره ما", link: "/about" },
-    { id: 3, name: "خدمات ما", link: "/orders" },
-    { id: 4, name: "تماس با ما", link: "#contact" },
-    { id: 5, name: "وبلاگ ما", link: "/contact" },
-  ];
   AOS.init();
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenMenu = () => {
@@ -71,9 +64,7 @@ function Header() {
           >
             <i className="ri-menu-line ri-lg"></i>
           </div>
-          {isOpen && (
-            <HeaderMobile onClose={handleCloseMenu} />
-          )}
+          {isOpen && <HeaderMobile onClose={handleCloseMenu} />}
           <div className="btn-header-2">
             <i className="ri-calendar-2-fill"></i>
             <a className=" transition-all ">رزرو نوبت</a>
